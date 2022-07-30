@@ -1,0 +1,1141 @@
+<html>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <body>
+        <div class="container d-flex justify-content-end">
+            <div class="align-self-center" id="leftGear">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"></svg>
+            </div>
+            <div class="p-3 pb-md-4 mx-auto text-center">
+                <h1 float-md-start mb-0> Chinglish Checker </h1>
+            </div>
+            <div class="align-self-center" id="rightGear">
+                <svg type="button" style="-webkit-appearance:none" onclick="settings()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="silver" fill-rule="evenodd" d="M16 12a4 4 0 11-8 0 4 4 0 018 0zm-1.5 0a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                    <path fill="silver" fill-rule="evenodd" d="M12 1c-.268 0-.534.01-.797.028-.763.055-1.345.617-1.512 1.304l-.352 1.45c-.02.078-.09.172-.225.22a8.45 8.45 0 00-.728.303c-.13.06-.246.044-.315.002l-1.274-.776c-.604-.368-1.412-.354-1.99.147-.403.348-.78.726-1.129 1.128-.5.579-.515 1.387-.147 1.99l.776 1.275c.042.069.059.185-.002.315-.112.237-.213.48-.302.728-.05.135-.143.206-.221.225l-1.45.352c-.687.167-1.249.749-1.304 1.512a11.149 11.149 0 000 1.594c.055.763.617 1.345 1.304 1.512l1.45.352c.078.02.172.09.22.225.09.248.191.491.303.729.06.129.044.245.002.314l-.776 1.274c-.368.604-.354 1.412.147 1.99.348.403.726.78 1.128 1.129.579.5 1.387.515 1.99.147l1.275-.776c.069-.042.185-.059.315.002.237.112.48.213.728.302.135.05.206.143.225.221l.352 1.45c.167.687.749 1.249 1.512 1.303a11.125 11.125 0 001.594 0c.763-.054 1.345-.616 1.512-1.303l.352-1.45c.02-.078.09-.172.225-.22.248-.09.491-.191.729-.303.129-.06.245-.044.314-.002l1.274.776c.604.368 1.412.354 1.99-.147.403-.348.78-.726 1.129-1.128.5-.579.515-1.387.147-1.99l-.776-1.275c-.042-.069-.059-.185.002-.315.112-.237.213-.48.302-.728.05-.135.143-.206.221-.225l1.45-.352c.687-.167 1.249-.749 1.303-1.512a11.125 11.125 0 000-1.594c-.054-.763-.616-1.345-1.303-1.512l-1.45-.352c-.078-.02-.172-.09-.22-.225a8.469 8.469 0 00-.303-.728c-.06-.13-.044-.246-.002-.315l.776-1.274c.368-.604.354-1.412-.147-1.99-.348-.403-.726-.78-1.128-1.129-.579-.5-1.387-.515-1.99-.147l-1.275.776c-.069.042-.185.059-.315-.002a8.465 8.465 0 00-.728-.302c-.135-.05-.206-.143-.225-.221l-.352-1.45c-.167-.687-.749-1.249-1.512-1.304A11.149 11.149 0 0012 1zm-.69 1.525a9.648 9.648 0 011.38 0c.055.004.135.05.162.16l.351 1.45c.153.628.626 1.08 1.173 1.278.205.074.405.157.6.249a1.832 1.832 0 001.733-.074l1.275-.776c.097-.06.186-.036.228 0 .348.302.674.628.976.976.036.042.06.13 0 .228l-.776 1.274a1.832 1.832 0 00-.074 1.734c.092.195.175.395.248.6.198.547.652 1.02 1.278 1.172l1.45.353c.111.026.157.106.161.161a9.653 9.653 0 010 1.38c-.004.055-.05.135-.16.162l-1.45.351a1.833 1.833 0 00-1.278 1.173 6.926 6.926 0 01-.25.6 1.832 1.832 0 00.075 1.733l.776 1.275c.06.097.036.186 0 .228a9.555 9.555 0 01-.976.976c-.042.036-.13.06-.228 0l-1.275-.776a1.832 1.832 0 00-1.733-.074 6.926 6.926 0 01-.6.248 1.833 1.833 0 00-1.172 1.278l-.353 1.45c-.026.111-.106.157-.161.161a9.653 9.653 0 01-1.38 0c-.055-.004-.135-.05-.162-.16l-.351-1.45a1.833 1.833 0 00-1.173-1.278 6.928 6.928 0 01-.6-.25 1.832 1.832 0 00-1.734.075l-1.274.776c-.097.06-.186.036-.228 0a9.56 9.56 0 01-.976-.976c-.036-.042-.06-.13 0-.228l.776-1.275a1.832 1.832 0 00.074-1.733 6.948 6.948 0 01-.249-.6 1.833 1.833 0 00-1.277-1.172l-1.45-.353c-.111-.026-.157-.106-.161-.161a9.648 9.648 0 010-1.38c.004-.055.05-.135.16-.162l1.45-.351a1.833 1.833 0 001.278-1.173 6.95 6.95 0 01.249-.6 1.832 1.832 0 00-.074-1.734l-.776-1.274c-.06-.097-.036-.186 0-.228.302-.348.628-.674.976-.976.042-.036.13-.06.228 0l1.274.776a1.832 1.832 0 001.734.074 6.95 6.95 0 01.6-.249 1.833 1.833 0 001.172-1.277l.353-1.45c.026-.111.106-.157.161-.161z"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div class="container d-grid">
+                <textarea class="form-control mb-3" id="textInput" rows="10"></textarea>
+                <div style="display:none" class="mb-3" id="textBox">
+                    <label for="text" class="form-label fw-bold" id="textLabel">Labeled Text</label>
+                    <div class="form-control" id="text"></div>
+                </div>
+                <div style="display:none" class="mb-3" id="repBox">
+                    <label for="rep" class="form-label fw-bold" id="repLabel">Replace</label>
+                    <div class="form-control" id="rep"></div>
+                </div>
+                <div style="display:none" class="mb-3" id="remBox">
+                    <label for="rem" class="form-label fw-bold" id="remLabel">Remove and Paraphrase</label>
+                    <div class="form-control" id="rem"></div>
+                </div>
+                <div style="display:none" class="mb-3" id="longBox">
+                    <label for="long" class="form-label fw-bold" id="longLabel">Long Sentences</label>
+                    <div class="form-control" id="long"></div>
+                </div>
+                <button class="btn btn-outline-dark position-relative start-50 translate-middle-x mb-3" onclick="check()" id="check">
+                    Check
+                </button>
+                <button style="display:none" class="btn btn-outline-dark position-relative start-50 translate-middle-x mb-3" onclick="newInput()" id="newInput">
+                    New Input
+                </button>
+            </div>
+        </div>
+        
+        <div style="display:none" id="settings">
+            <div class="container d-grid">
+                <label class="form-label fw-bold">Settings</label>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item">
+                        <input type="checkbox" onclick="repToggle()" checked>
+                        <span style="padding-left:1rem">Replace</span>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" onclick="remToggle()" checked>
+                        <span style="padding-left:1rem">Remove and Paraphrase</span>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" onclick="longToggle()" checked>
+                        <span style="padding-left:1rem">Long Sentences</span>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" onclick="parToggle()">
+                        <span style="padding-left:1rem">Parallel Structure</span>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" onclick="ionToggle()">
+                        <span style="padding-left:1rem">Detect <em>-ion, -ment, -ence, -ance, </em>and <em>-ness</em> </span>
+                    </li>
+                  </ul>
+                <button class="btn btn-outline-dark position-relative start-50 translate-middle-x mb-3" onclick="confirm()" id="confirm">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+
+// a list of bad cases that should be changed
+let bad = [
+    // The Translator's Guide to Chinglish
+
+    // Part One: Unnecessary Words
+
+    // II. Unnecessary Modifers
+
+    // 1. Redundant modifiers
+    ["advance forecasts", "forecasts"],
+    ["new innovations", "innovations"],
+    ["mutual cooperation", "cooperation"],
+    ["residential housing", "housing"],
+    ["positive guidance", "guidance"],
+    ["female businesswoman", "businesswoman"],
+    ["financial revenue", "revenue"],
+    ["a family relative", "relative"],
+    ["an unfortunate tragedy", "a tragedy"],
+
+    // 2. Self-evident modifiers
+    ["national", null],
+    ["China's", null],
+    ["proper", null],
+    ["properly", null],
+    ["appropriate", null],
+    ["appropriately", null],
+    ["adequate", null],
+    ["adequately", null],
+    ["clearly", null],
+    ["current", null],
+    ["in the past", null],
+    ["in the future", null],
+    ["fully", null],
+    ["further", null],
+    ["suitable", null],
+    ["constantly", null],
+    ["various", null],
+    ["favorable", null],
+    ["earnestly", null],
+
+    // 3. Intensifiers
+    ["extremely", null],
+    ["absolutely", null],
+    ["strong", null],
+    ["definitely", null],
+    ["firmly", null],
+    ["surely", null],
+    ["thoroughly", null],
+    ["serious", null],
+    ["strongly", null],
+    ["totally", null],
+    ["persistently", null],
+    ["broad masses of the people", "masses"],
+    ["tiny handful", "handful"],
+    ["active", null],
+    ["actively", null],
+    ["effective", null],
+    ["effectively", null],
+    ["actual", null],
+    ["actually", null],
+    ["successful", null],
+    ["successfully", null],
+    ["tremendously", null],
+    ["convincingly", null],
+    ["resolutely", null],
+    ["assuredly", null],
+    ["certainly", null],
+    ["very", null],
+    ["truly", null],
+    ["genuinely", null],
+    ["tremendous", null],
+    ["drastically", null],
+
+    // 4. Qualifiers
+    ["reasonably", null],
+    ["comparatively", null],
+    ["quite", null],
+    ["somewhat", null],
+    ["basically", null],
+    ["fairly", null],
+    ["perhaps", null],
+    ["maybe", null],
+    ["possibly", null],
+    ["possible", null],
+    ["rather", null],
+    ["a little", null],
+
+    // 5. Cliches
+
+    // III. Redundant Twins
+
+    // 1. Same meaning
+    ["affluence and prosperity", "prosperity"],
+    ["rough and bumpy", "rough"],
+    ["contacts and dealings", "contacts"],
+    ["corrected or solved", "solved"],
+    ["fine and excellent", "fine"],
+    ["discussions and deliberations", "discussions"],
+    ["skills and abilities", "skills"],
+    ["setbacks and defeats", "defeats"],
+    ["errors and mistakes", "mistakes"],
+    ["practices and customs", "practices"],
+    ["troubles and problems", "troubles"],
+    ["trials and tests", "trials"],
+    ["paths and routes", "paths"],
+    ["divisions and splits", "splits"],
+    ["functions and responsibilities", "functions"],
+    ["shortcomings and weaknesses", "weaknesses"],
+    ["consciousness and awareness", "awareness"],
+    ["forecasts and predictions", "forecasts"],
+    ["shrinkage or decrease", "decrease"],
+    ["steps and measures", "steps"],
+    ["instructions and commands", "commands"],
+    ["plots and intrigues", "plots"],
+    ["complaints and dissatisfactions", "complaints"],
+    ["disputes and dissension", "disputes"],
+    ["restrictions and shackles", "shackles"],
+    ["consider and study", "study"],
+    ["endorse and support", "support"],
+    ["introduce and put into effect", "introduce"],
+    ["give way and collapse", "collapse"],
+    ["triumph and overcome", "triumph"],
+    ["defeat and overthrow", "overthrow"],
+    ["flee and retreat", "flee"],
+    ["unmasked and revealed", "unmasked"],
+    ["absorbing and incorporating", "absorbing"],
+    ["following and putting into effect", "following"],
+    // TODO: Add adjectives and adverbs
+
+    // 2. Contained or implied
+    ["best and thorough", "best"],
+    ["evaluated and comprehended", "evaluated"],
+    ["interfere with and undermine", "undermine"],
+    ["promulgated and implemented", "promulgated"],
+
+    // 3. Vague and general
+    ["grow and develop", "grow"],
+    ["further and develop", "expand"],
+    ["strengthen and improve", "strengthen"],
+    ["healthy and rational", "rational"],
+
+    // Part Two: Sentence Structure
+
+    // VII. The Noun Plague
+    ["the realization of", null],
+    ["pay attention to", null],
+    ["the practice of", null],
+    ["the objective of", null],
+    ["make an improvement", "improve"],
+    ["reach the goal of", null],
+    ["solidity", "solid"],
+    ["construction", "build"],
+    ["implementation", "introduce"],
+    ["application of", null],
+    ["failure", "otherwise"],
+    ["adherence", "adhere"],
+    ["achievements", "achieve"],
+    ["behavior", "behave"],
+    ["reading", "read"],
+    ["revitalization", "revitalizing"],
+    ["issuance", "issuing"],
+    ["cooperation", "cooperating"],
+    ["reinforcement", "strengthening"],
+    ["unsoundness in", "poor"],
+    ["rich in elasticity", "elastic"],
+    ["the correctness of", "correct"],
+    ["blindness in", "blindly"],
+    ["work evaluation", "evaluating work"],
+    ["workpoints allotment", "alloting workpoints"],
+    ["leadership capacity", "capacity to lead"],
+    ["technology transformation", "technological transformation"],
+    ["modernization", "modernizing"],
+    ["management", "managing"],
+    ["analysis", "analyze"],
+    ["refusal", "refuse"],
+    ["loss", "lose"],
+    ["ascent", "ascend"],
+    ["attainment", "reach"],
+    ["readjustment", "readjusting"],
+    ["planning of", "plan"],
+    ["the highest degree of", "most"],
+    ["the lack of", "not sufficiently + VERB"],
+    ["hindrance", "difficult"],
+    ["disadvantage", "impede"],
+    ["likelihood", "likely"],
+    ["curtailment", "reduce"],
+    ["enhancement", "increase"],
+    ["stability", "stablize"],
+    ["restoration", "restore"],
+    ["consolidation", "consolidate"],
+    ["accomplishment", "complete"],
+    ["the rapid progress of", "speed up"],
+
+    // Li Changshuan 
+
+    // Chapter 7.7
+    ["accede to", "agree to"],
+    ["determine", "set"],
+    ["domicile", "house"],
+    ["eliminate", "cut out"],
+    ["emphasize", "highlight"],
+    ["employment opportunities", "jobs"],
+    ["in view of the fact that", "as"],
+    ["with respect to", "on"],
+    ["a certain number of", "some"],
+    ["the majority of", "most"],
+    ["pursuant to", "under"],
+    ["within the framework of", "under"],
+    ["the reason for", "because"],
+    ["for the reason that", "because"],
+    ["due to that fact that", "because"],
+    ["owing to the fact that", "because"],
+    ["in light of the fact that", "because"],
+    ["considering the fact that", "because"],
+    ["on the grounds that", "because"],
+    ["this is why", "because"],
+    ["despite the fact that", "although"],
+    ["regardless of the fact that", "although"],
+    ["notwithstanding the fact that", "although"],
+
+    // Chapter 7.11
+    ["not many", "few"],
+    ["not the same", "different"],
+    ["not different", "similar"],
+    ["did not", "failed to"],
+    ["does not have", "lacks"],
+    ["did not stay", "left"],
+
+    // Chapter 11.1
+    ["a series of", null],
+    ["a great variety of", null],
+    ["all sorts of", null],
+
+    // Chapter 11.3
+    ["submit an application for", "apply for"],
+    ["carry out an evaluation of", "evaluate"],
+    ["implement an investigation of", "investigate"],
+    ["conduct a review of", "review"],
+    ["perform an assessment of", "assess"],
+    ["effect a renewal of", "renew"],
+    ["the introduction of", "introducing"],
+    ["the allocation of", "allocating"],
+    ["the provision of", "providing"],
+    ["make an improvement", "improve"],
+    ["examination of", "examine"],
+    ["implement the reform", "reform"],
+    ["launch an attack", "attack"],
+    ["bring about a change", "change"],
+    ["approval", "approve"],
+    ["decision", "decide"],
+    ["proposal", "propose"],
+    ["guidance", "guide"],
+    ["assistance", "assist"],
+    ["carry out", null],
+    ["discussion", "discuss"],
+    ["success", "succeed"],
+    ["realize", null],
+    ["transformation", "transform"],
+    ["exercise", null],
+    ["investigation", "investigate"],
+
+    // Chapter 11.6
+    ["the work of", null],
+    ["the cause of", null],
+    ["the sphere of", null],
+    ["a relationship of", null],
+    ["the practice of", null],
+    ["the factor of", null],
+    ["in number", null],
+    ["the business of", null],
+    ["the state of", null],
+    ["a subject that", null],
+    ["adopt the principle of", null],
+    ["used the method of", null],
+    ["introducing the method of", null],
+    ["an approach of", null],
+    ["effect on", null],
+    ["target of", null],
+    ["perform the task of", null],
+    ["carry out the task of", null],
+    ["adopted the policy of", null],
+    ["followed a policy of", null],
+    ["implement the strategy of", null],
+    ["assume the attitude of", null],
+    ["the situation", null],
+    ["phenomenon", null],
+
+    // Chapter 11.8
+    ["valuable treasure", "treasure"],
+    ["economically developed", "developed"],
+    ["final completion", "completion"],
+    ["widely", null],
+    ["take measures to", null],
+    ["for the people", null],
+    ["there is", null],
+
+    // Chapter 11.13.1
+    ["in some respects", null],
+    ["in my opinion", null],
+    ["at least", null],
+    ["as everyone knows", null],
+    ["it is generally agreed that", null],
+    ["it is quite true that", null],
+    ["as we can plainly see", null],
+    ["literally", null],
+
+    // Appendix: Words and Expressions to Avoid
+    ["abeyance", null],
+    ["above-mentioned", null],
+    ["afore-granted", null],
+    ["afore-mentioned", null],
+    ["aforesaid", null],
+    ["before-mentioned", null],
+    ["henceforward", null],
+    ["hereby", null],
+    ["herein", null],
+    ["hereinafter", null],
+    ["hereinbefore", null],
+    ["hereunto", null],
+    ["pursuant", null],
+    ["thenceforth", null],
+    ["thereunto", null],
+    ["therewith", null],
+    ["to wit", null],
+    ["under-mentioned", null],
+    ["unto", null],
+    ["whatsoever", null],
+    ["whensoever", null],
+    ["wheresoever", null],
+    ["whereas", null],
+    ["whereof", null],
+    ["whosoever", null],
+    ["within-named", null],
+    ["witnesseth", null],
+
+    // Appendix: Preferred Expressions
+    ["accorded", "given"],
+    ["adequate number of", "enough"],
+    ["afford an opportunity", "allow OR let"],
+    ["afforded", "given"],
+    ["all of the", "all the"],
+    ["approximately", "about"],
+    ["at the time", "when"],
+    ["attempt to", "try to"],
+    ["by means of", "by"],
+    ["calculate", "compute"],
+    ["category", "kind OR class OR group"],
+    ["cease", "stop"],
+    ["commence", "begin OR start"],
+    ["complete", "finish"],
+    ["conceal", "hide"],
+    ["consequence", "result"],
+    ["contiguous to", "next to"],
+    ["deem", "consider"],
+    ["donate", "give"],
+    ["during such time as", "while"],
+    ["during the course of", "during"],
+    ["echelons", "levels"],
+    ["effectuate", "carry out OR try"],
+    ["endeavor", "carry out OR try"],
+    ["enter into a contract with", "contract with"],
+    ["enumerate", "count"],
+    ["equitable", "fair"],
+    ["evince", "show"],
+    ["excessive number of", "too many"],
+    ["expedite", "hasten OR speed up"],
+    ["expend", "spend"],
+    ["expiration", "end"],
+    ["feasible", "possible"],
+    ["for the duration of", "during"],
+    ["for the purpose of", "to"],
+    ["for the reason that", "because"],
+    ["forthwith", "immediately"],
+    ["frequently", "often"],
+    ["hereafter", "after this ... takes effect"],
+    ["heretofore", "before this ... takes effect"],
+    ["implement", "carry out OR do follow"],
+    ["in case", "if"],
+    ["in cases in which", "when OR where"],
+    ["in lieu of", "instead of OR in place of"],
+    ["in order to", "to"],
+    ["in the event that", "if"],
+    ["in the interest of", "for"],
+    ["incumbent upon", "must"],
+    ["indicate", "show"],
+    ["inform", "tell"],
+    ["inquire", "ask"],
+    ["institute", "begin OR start"],
+    ["interrogate", "question"],
+    ["is able to", "can"],
+    ["is authorized", "may"],
+    ["is binding upon", "binds"],
+    ["is empowered", "may"],
+    ["is unable to", "cannot"],
+    ["it shall be lawful", "may"],
+    ["manner", "way"],
+    ["maximum", "most OR largest OR greatest"],
+    ["minimum", "least OR smallest"],
+    ["modify", "change"],
+    ["necessitate", "require"],
+    ["non-concur", "disagree"],
+    ["obligate", "bind OR compel"],
+    ["obtain", "get"],
+    ["occasion", "cause (AS VERB)"],
+    ["of a technical nature", "technical"],
+    ["on the part of", "by"],
+    ["per day", "a day"],
+    ["per year", "a year"],
+    ["period of time", "period OR time"],
+    ["portion", "part"],
+    ["possess", "have"],
+    ["preserve", "keep"],
+    ["prior", "earlier"],
+    ["prior to", "before"],
+    ["proceed", "go OR go ahead"],
+    ["procure", "obtain OR get"],
+    ["provision of law", "law"],
+    ["purchase", "buy"],
+    ["pursuant to", "under"],
+    ["remainder", "rest"],
+    ["render", "make OR give"],
+    ["require", "need"],
+    ["retain", "keep"],
+    ["specified", "named"],
+    ["subsequent to", "after"],
+    ["sufficient number of", "enough"],
+    ["summon", "send for OR call"],
+    ["the manner in which", "how"],
+    ["to the effect that", "that"],
+    ["under the provisions of", "under"],
+    ["until such times as", "until"],
+    ["utilize", "use"],
+    ["with reference to", "for"],
+    ["within or without", "inside or outside"],
+
+    // English, Chinglish and Wronglish
+
+    // II. Plural Nouns 
+
+    // Nouns with no plural
+
+    ["advices", "advice"],
+    ["aircrafts", "aircraft"],
+    ["assistances", "assistance"],
+    ["consensuses", "consensus"],
+    ["equipments", "equipment"],
+    ["evidences", "evidence"],
+    ["trainings", "training"],
+
+    // Nouns that mean something different in the plural
+
+    ["enlightenments", "insights"],
+    ["progresses", "progress (NOUN)"],
+    ["researches", "research (NOUN)"],
+    ["staffs", "employees"],
+
+    // Modifiers
+
+    ["advices", "sorts of advice"],
+    ["aircrafts", "types of aircraft"],
+    ["assistances", "forms of assistance"],
+    ["consensuses", "levels of consensuses"],
+    ["evidences", "items of evidence"],
+    ["equipments", "sets of equipment"],
+    ["trainings", "types of training"],
+    ["aids", "amount of aid"],
+    ["attentions", "levels of attention"],
+    ["consumptions", "forms of consumption"],
+    ["damages", "types of damage"],
+    ["disciplines", "levels of discipline"],
+    ["progresses", "rates of progress"],
+    ["researches", "types of research"],
+    ["staffs", "members of staff"],
+    ["contributions", "types of contribution"],
+    ["conveniences", "levels of convenience"],
+    ["grains", "species of grain"],
+    ["oils", "quantities of oil"],
+
+    // General Nouns
+
+    ["backbone", "leading light"],
+    ["backbones", "key members"],
+    ["batch of female", "group of female"],
+    ["batch of male", "group of male"],
+    ["batch of herders", "group of herders"],
+    ["batch of experts", "group of experts"],
+    ["commodities", "commodity (product)"],
+    ["draught disaster", "draught"],
+    ["storm disaster", "storm"],
+    ["fire disaster", "fires"],
+    ["rat disaster", "infestations of rats"],
+    ["locust disaster", "plagues of locusts"],
+    ["scholars", "academics"],
+    ["scholar", "academic"],
+    ["status quo", "status / situation"],
+    
+    // IV. Verbs
+
+    // Errors of construction
+    ["advised to", "Don't use <em>advise to</em> in active voice."],
+    ["advise to", "Don't use <em>advise to</em> in active voice."],
+    ["announced to", "Don't use <em>announce to</em> in active voice."],
+    ["approved to", "Don't use <em>approve to</em>, <em>approve doing</em>, OR <em>approve that</em> in active voice."],
+    ["ensures to", "ensures that"],
+    ["ensured to", "ensured that"],
+    ["ensure to", "ensure that"],
+    ["allowed to be", "could be"],
+    ["allowed to be", "allowed"],
+    ["allowed to be", "have the right to"],
+    ["most-awarded", "win more awards than others"],
+    ["find out", "find SOMETHING"],
+    ["introduced that", "explained that"],
+    ["introduce that", "explain that"],
+    ["introduces that", "introduce that"],
+    ["introduced in detail", "explained in detail"],
+    ["keeps increasing", "continues to increase"],
+    ["keeps on increasing", "continues to increase"],
+    ["persisted in", "persevered in"],
+    ["persistently", "persevere in"],
+    ["mentioned", "emphasised / proposed / underlined / declared"],
+    ["persuaded", "tried to persuade"],
+    ["revealed", "released / issued"],
+    ["stressed", "emphasised"],
+    ["stress on", "emphasise on"],
+    ["take up", "make up"],
+    ["took up", "made up"],
+    ["touting", "Don't use <em>tout</em> in a positive sense."],
+    ["tout", "Don't use <em>tout</em> in a positive sense."],
+    ["bully", "abuse"],
+    ["contain", "stifle / restrict / constrain / thwart"],
+    ["hyping", "dramatize / exaggerate / overstate"],
+    ["hyping up", "dramatize / exaggerate / overstate"],
+    ["hype", "dramatize / exaggerate / overstate"],
+    ["hype up", "dramatize / exaggerate / overstate"],
+
+    // V. Adjectives and Adverbs
+
+    ["mainly", "main"],
+    ["totally", "in total / a total of"],
+    ["likely", "probably (ADVERB)"],
+    ["timely", "on time / promptly (ADVERB)"],
+    ["orderly", "in an orderly manner (ADVERB)"],
+    ["famous", "celebrated / famed / renowned / eminent / prominent / foremost / notorious / infamous / well-known / best-known"],
+
+    // VI. Miscellaneous Expressions
+
+    ["how do you think of", "what do you think of"],
+    ["how do you think about", "what do you think about"],
+    ["took a photo", "had their photo taken"],
+    ["kicked off", "was launched"],
+    ["made its debut", "first"],
+    ["under such a background", "against such a background"],
+    ["under this background", "against this background"],
+    ["under the background", "against the background"],
+    ["despite of", "despite / inspite of"],
+    ["except", "except for / other than / with the exception of"],
+    ["inevitable", "essential"],
+    ["including", "Delete <em>including</em> when all items are listed."],
+    ["included", "Delete <em>included</em> when all items are listed."],
+    ["over", "more than"],
+    ["for several times", "several times"],
+    ["by now", "to date / now / at the moment (NO ADVERSATIVE)"],
+    ["until now", "at the moment / to date (NO ADVERSATIVE)"],
+    ["meanwhile", "at the same time (SAME SUBJECT)"],
+    ["on the contrary", "in contrast / conversely"],
+    ["advantages", "strengths (NO COMPARISON)"],
+    ["advantage", "strength (NO COMPARISON)"],
+    ["as a", "Delete <em>as</em> if there are no causal relationships."],
+    ["as one of", "Delete <em>as</em> if there are no causal relationships."],
+    ["at least several", "at least + SPECIFIC NUMBER"],
+    ["at most several", "at most + SPECIFIC NUMBER"],
+    ["more than several", "more than + SPECIFIC NUMBER"],
+    ["less than several", "less than + SPECIFIC NUMBER"],
+    ["fewer than several", "fewer than + SPECIFIC NUMBER"],
+    ["at least a few", "at least + SPECIFIC NUMBER"],
+    ["at most a few", "at most + SPECIFIC NUMBER"],
+    ["more than a few", "more than + SPECIFIC NUMBER"],
+    ["less than a few", "less than + SPECIFIC NUMBER"],
+    ["fewer than a few", "fewer than + SPECIFIC NUMBER"],
+    ["at least dozens of", "at least + SPECIFIC NUMBER"],
+    ["at most dozens of", "at most + SPECIFIC NUMBER"],
+    ["more than dozens of", "more than + SPECIFIC NUMBER"],
+    ["less than dozens of", "less than + SPECIFIC NUMBER"],
+    ["fewer than dozens of", "fewer than + SPECIFIC NUMBER"],
+    ["a few the", "a few"],
+    ["some the", "some"],
+    ["many the", "many"],
+
+    // VII. Spoken English Issues
+
+    ["as a matter of fact", "Delete when no adversative."],
+    ["as a matter of fact", "but (strong adversative)"],
+    ["what's more", "in addition"],
+    ["kids", "children"],
+    ["so far", "to date / at the moment (BEGINNING OF SENTENCE)"],
+    ["-odd", "more than"],
+    ["etc", "including"],
+    ["and so on", "including"],
+    ["and whatnot", "including"],
+
+    // Not yet classified
+    ["make decisions", "decide"],
+    ["winners", "win"],
+    ["losers", "lose"],
+    ["when it comes to", null],
+    ["violent and disruptive", "violent"],
+    ["a remarkably small number of", "a few"],
+    ["to some extent", null],
+    ["not difficult", "easy"],
+    ["a wide range of", null],
+    ["are not competent to", "cannot"],
+    ["say in response to", "respond to"],
+    ["one of the", "one"],
+    ["far from obvious", "obscure"],
+    ["make a judgement about", "judge"],
+    ["preferences", "prefer"],
+    ["almost all", "most"],
+    ["knowledge of", "know"],
+    ["solution to", "solve"],
+    ["there is no reason to", null],
+    ["speak of", null],
+    ["the means by which", "how"],
+    ["level and degree", "level"],
+    ["degradation and destruction", "degradation"],
+    ["explosion in", "explode"],
+    ["extinction of", "extinct"],
+    ["depletion of", "deplete"],
+    ["erosion of", "erode"],
+    ["backdrop and justification", "justify"],
+    ["issues and problems", "problems"],
+    ["problems and prospects", "prospects"],
+    ["reflected and refracted", "reflected"],
+    ["attention and concern", "attention"],
+    ["organization and institution", "organization"],
+    ["important", null],
+    ["as a profession", null],
+    ["it seems", null],
+    ["really", null],
+    ["the fact that", null],
+    ["conscientious and desirous", "pursue"],
+    ["the principles of", null],
+    ["roots in", "rooted in"],
+    ["a huge range of", "many"],
+    ["a unique role", "unique"],
+    ["the manager of", "manage"],
+    ["use force to compel", "compel"],
+    ["responsibilities and duties", "duties"],
+    ["there are", null],
+    ["trust and support", "support"],
+    ["in complicated ways", null],
+    ["have access to", "access"],
+    ["over time", null],
+    ["many kinds of", "many"],
+    ["passing significance", "transient"],
+    ["a key element of", "vital for"],
+    ["useful", null],
+    ["a shortage of", "short of"],
+    ["a truism", "true"],
+    ["the development of", "developing"],
+    ["underlying principles", "principles"],
+    ["improved", "better"],
+    ["the need for", null],
+    ["is thought to", null],
+    ["provide information to", "inform"],
+    ["a wide variaty of", null],
+    ["the light of sunshine", "sunshine"],
+    ["over the Internet", "online"],
+    ["in nature", null],
+    ["consequently", "thus"],
+    ["in an aggregate fashion", "together"],
+    ["embrace", null],
+    ["embraced", null],
+    ["a crucial role", "crucial"],
+    ["an assessment of", "assess"],
+    ["efficiency and effectiveness", "efficiency"],
+    ["certain", null],
+    ["make", null],
+    ["makes", null],
+    ["made", null],
+    ["making", null],
+    ["a large amount of", "much"],
+    ["large amounts of", "much"],
+    ["the list of", null],
+    ["the plausibility of", "plausible"],
+    ["take actions", "act"],
+    ["calculated numerically", "computed"],
+    ["quantitative metrics", "metrics"],
+    ["a means of", "a way to"],
+    ["effectiveness and performance", "performance"],
+    ["is a tool for", "helps to"],
+    ["the present", null],
+    ["the nature of", null],
+    ["the notion of", null],
+    ["realistic", null],
+    ["goals and objectives", "goals"],
+    ["have important value in", null],
+    ["vision and mission", "mission"],
+    ["implementation process", "implementation"],
+    ["planning process", "planning"],
+    ["a powerful device for", null],
+    ["fluctuation and change", "change"],
+    ["learning and renewal", "renewal"],
+    ["a community of people", "a community"],
+    ["deep", null],
+    ["deeply", null],
+    ["in the absence of", "without"],
+    ["inherently", null],
+    ["circumstances", null],
+    ["on a daily basis", "every day"],
+    ["principal objective", "aim"],
+    ["in an accurate manner", "accurately"],
+    ["predict future", "predict"],
+    ["the establishment of", "establishing"],
+    ["the elaboration of", "elaborating"],
+    ["economic and monetary", "economic"],
+    ["the meanders of", "complex"],
+    ["the large number of", null],
+    ["close relationships", "closely relate"],
+    ["the concept of", null],
+    ["the result of", "result from"],
+    ["complexity and interdependence", "interdependent"],
+    ["in the field of", "in"],
+    ["the constellation of", "many"],
+    ["greater", null],
+    ["a combination of", "combining"],
+    ["intellectual opinions", "opinions"],
+    ["connotes", "implies"],
+    ["a wide spectrum of", "many"],
+    ["work collaboratively", "cooperate"],
+    ["in the decision-making process", "when making decisions"],
+    ["productive and effective", "productive"],
+    ["the enrichment of", "enriching"],
+    ["lack of", null],
+    ["ways to do things", "ways"],
+    ["a reflection of", "reflect"],
+    ["in circumtances where", "when"],
+    ["take a risk", "risk"],
+    ["health and vitality", "vitality"],
+    ["is dependent upon", "depends on"],
+    ["one of the many ways", "one way"],
+    ["performs a significant role in", null],
+    ["people's human rights", "human rights"],
+    ["conspicuous", "obvious"],
+    ["harmony and accord", "harmony"],
+    ["chaos and conflict", "chaos"],
+    ["inevitable consequence", null],
+    ["with the aim of", "aiming at"],
+    ["an integral part of", "integrate"],
+    ["a reassessment of", "reassessing"],
+    ["provided that", null]
+]
+
+window.$ = function (selector) {
+    return document.querySelector(selector);
+}
+
+// available functions
+doRep = true;
+doRem = true;
+doLong = true;
+doPar = false;
+doIon = false;
+
+// theme colors
+fcReplace = "#1E90FF";
+fcRemove = "#C0C0C0";
+fcLong = "#CC00FF";
+fcIon = "#FF0099";
+
+// suggestions
+
+let suggestions = [
+    // The Elements of Style
+    "Form the possessive singular of nouns with 's.",
+    "In a series of three or more terms with a single conjunction, use a comma after each term except the last.",
+    "Enclose parenthetic expressions between commas.",
+    "Place a comma before and or but introducing an independent clause.",
+    "Do not join independent clauses by a comma.",
+    "Do not break sentences in two.",
+    "A participial phrase at the beginning of a sentence must refer to the grammatical subject.",
+    "Divide words at line-ends, in accordance with their formation and pronunciation.",
+    "Make the paragraph the unit of composition: one paragraph to each topic.",
+    "As a rule, begin each paragraph with a topic sentence.",
+    "Use the active voice. The active voice is usually more direct and vigorous than the passive.",
+    "Put statements in positive form.",
+    "Omit needless words.",
+    "Avoid a succession of loose sentences.",
+    "Express co-ordinate ideas in similar form.",
+    "Keep related words together.",
+    "In summaries, keep to one tense.",
+    "Place the emphatic words of a sentence at the end.",
+
+    // Legal Writing in Plain English
+    "Have something to say—and think it through.",
+    "For maximal efficiency, plan your writing projects. Try nonlinear outlining.",
+    "Order your material in a logical sequence. Use chronology when presenting facts. Keep related material together.",
+    "Divide the document into sections, and divide sections into smaller parts as needed. Use informative headings for the sections and subsections.",
+    "Omit needless words.",
+    "Keep your average sentence length to about 20 words.",
+    "Keep the subject, the verb, and the object together—toward the beginning of the sentence.",
+    "Prefer the active voice over the passive.",
+    "Use parallel phrasing for parallel ideas.",
+    "Avoid multiple negatives.",
+    "End sentences emphatically.",
+    "Learn to detest simplifiable jargon.",
+    "Use strong, precise verbs. Minimize [is], [are], [was], and [were].",
+    "Turn [-ion] words into verbs when you can.",
+    "Simplify wordy phrases. Watch out for [of].",
+    "Avoid doublets and triplets.",
+    "Refer to people and companies by name.",
+    "Don't habitually use parenthetical shorthand names. Use them only when you really need them.",
+    "Shun newfangled acronyms.",
+    "Make everything you write speakable.",
+    "Plan all three parts: the beginning, the middle, and the end.",
+    "Use the \"deep issue\" to spill the beans on the first page.",
+    "Summarize. Don't overparticularize.",
+    "Introduce each paragraph with a topic sentence.",
+    "Bridge between paragraphs.",
+    "Vary the length of your paragraphs, but generally keep them short.",
+    "Provide signposts along the way.",
+    "Unclutter the text by moving citations into footnotes.",
+    "Weave quotations deftly into your narrative.",
+    "Be forthright in dealing with counterarguments.",
+    "Draft for an ordinary reader, not for a mythical judge who might someday review the document.",
+    "Organize provisions in order of descending importance.",
+    "Minimize definitions. If you have more than just a few, put them in a schedule at the end—not at the beginning.",
+    "Break down enumerations into parallel provisions. Put every list of subparts at the end of the sentence—never at the beginning or in the middle.",
+    "Delete every [shall].",
+    "Don't use provisos.",
+    "Replace [and/or] wherever it appears.",
+    "Prefer the singular over the plural.",
+    "Prefer numerals, not words, to denote amounts. Avoid word—numeral doublets.",
+    "If you don't understand a form provision—or don't understand why it should be included in your document—try diligently to gain that understanding. If you still can't understand it, cut it.",
+    "Use a readable typeface.",
+    "Create ample white space—and use it meaningfully.",
+    "Highlight ideas with attention-getters such as bullets.",
+    "Don't use all capitals, and avoid initial capitals.",
+    "For a long document, make a table of contents.",
+    "Embrace constructive criticism.",
+    "Edit yourself systematically.",
+    "Learn how to find reliable answers to questions of grammer and usage.",
+    "Habitually gauge your own readerly likes and dislikes, as well as those of other readers.",
+    "Remember that good writing makes the reader's job easy; bad writing makes it hard."
+]
+
+function newSuggestion() {
+    suggestion = suggestions[Math.floor(Math.random() * suggestions.length)]
+    document.getElementById("textInput").placeholder = suggestion;
+}
+
+newSuggestion();
+
+// show an element
+function show(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+// hide an element
+function hide(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+// construct suggestion text from suggestion list
+function getText(originalList, sorted) {
+    if (originalList.length == 0) {
+        return "";
+    }
+
+    list = originalList;
+    
+    if (sorted) {
+        list.sort();
+    }
+
+    t = list[0];
+    for(var i = 1; i < list.length; i++) {
+        t += "<br>" + list[i];
+    }
+    return t;
+}
+
+// check sentence length
+function checkLength(sent) {
+    return sent.split(" ").length >= 40;
+}
+
+function check(){
+    text = String($('#textInput').value);
+
+    if (text == "") {
+        alert("More suggestions?");
+        newSuggestion();
+        return;
+    }
+
+    // find long sentences before labelling words
+    if (doLong) {
+        longSents = text.split(".").filter(checkLength);
+
+        for (var i = 0; i < longSents.length; i++) {
+            longSents[i] += ".";
+            text = text.replace(longSents[i], longSents[i].fontcolor(fcLong));
+
+            // visual separation
+            longSents[i] += "<br>";
+        }
+
+        longText = getText(longSents, false);
+
+        if (longText != "") {
+            show("longBox");
+            $('#long').innerHTML = longText.fontcolor(fcLong);
+        }
+    }
+
+    text = text.replace(/\n/g, "<br>");
+
+    rep = [];
+    rem = [];
+
+    for (var i = 0; i < bad.length; i++) {
+        textLower = String(text.toLowerCase());
+
+        // match bad substrings in the original text
+        re = new RegExp("\\b" + bad[i][0] + "\\b", "g");
+
+        badIndices = [];
+
+        while ((match = re.exec(textLower)) != null) {
+            badIndices.push(match.index);
+        }
+
+        if (!badIndices.length) continue;
+
+        if (bad[i][1]) {
+            fc = fcReplace;
+            rep.push(bad[i][0].fontcolor(fc) + " -> " + bad[i][1]);
+        }
+        else {
+            fc = fcRemove;
+            rem.push(bad[i][0].fontcolor(fc));
+        }
+        
+        if ((bad[i][1] && doRep) || (!bad[i][1] && doRem)) {
+            for (j = badIndices.length-1; j >= 0; j--) {
+                l = badIndices[j];
+                r = l + bad[i][0].length;
+                text = text.substring(0, l)
+                    + text.substring(l, r).fontcolor(fc)
+                    + text.substring(r, text.length);
+            }
+        }
+    }
+
+    repText = getText(rep, true);
+    remText = getText(rem, true);
+
+    // detect parallel structure after labelling words
+    if (doPar) {
+        text = text.replace(/\band\b/g, "<b>and</b>");
+    }
+
+    if (doIon) {
+        text = text.replace(/ion\b/g, "ion".fontcolor(fcIon));
+        text = text.replace(/ions\b/g, "ions".fontcolor(fcIon));
+
+        text = text.replace(/ment\b/g, "ment".fontcolor(fcIon));
+        text = text.replace(/ments\b/g, "ments".fontcolor(fcIon));
+
+        text = text.replace(/ence\b/g, "ence".fontcolor(fcIon));
+        text = text.replace(/ences\b/g, "ences".fontcolor(fcIon));
+
+        text = text.replace(/ance\b/g, "ance".fontcolor(fcIon));
+        text = text.replace(/ances\b/g, "ances".fontcolor(fcIon));
+        
+        text = text.replace(/ness\b/g, "ness".fontcolor(fcIon));
+    }
+
+    // hide the settings
+
+    hide("leftGear");
+    hide("rightGear");
+
+    // hide the input box
+    hide("textInput");
+
+    // show the labeled-text box instead
+    show("textBox");
+    $('#text').innerHTML = text;
+
+    // show replace
+    if (repText != "" && doRep) {
+        show("repBox");
+        $('#rep').innerHTML = repText;
+    }
+    
+    // show remove
+    if (remText != "" && doRem) {
+        show("remBox");
+        $('#rem').innerHTML = remText;
+    }
+
+    hide("check");
+    show("newInput");
+}
+
+function newInput() {
+    newSuggestion();
+
+    show("textInput");
+    hide("textBox");
+    hide("repBox");
+    hide("remBox");
+    hide("longBox");
+    show("check");
+    hide("newInput");
+    
+    show("leftGear");
+    show("rightGear");
+}
+
+// switch between hte settings page and the main page
+
+function settings() {
+    hide("main");
+    show("settings");
+}
+
+function confirm() {
+    newSuggestion();
+
+    show("main");
+    hide("settings");
+}
+
+// functions called by the checkboxes
+
+function repToggle() {
+    doRep = !doRep;
+}
+
+function remToggle() {
+    doRem = !doRem;
+}
+
+function longToggle() {
+    doLong = !doLong;
+}
+
+function parToggle() {
+    doPar = !doPar;
+}
+
+function ionToggle() {
+    doIon = !doIon;
+}
+
+</script>
